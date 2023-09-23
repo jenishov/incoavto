@@ -1,0 +1,29 @@
+
+  .contact{
+    padding: 100px 0;
+
+    &__title{
+      margin-bottom: 72px;
+      font-size: 35px;
+      line-height: 96.5%;
+      color: #0F0F10;
+    }
+    &__subtitle{
+      font-size: 35px;
+      line-height: 96.5%;
+      color: #0F0F10;
+      margin-bottom: 72px;
+    }
+    &__info{
+      background: #FFFFFF;
+      box-shadow: 0 5px 48px rgba(49, 47, 47, 0.1);
+      border-radius: 43px;
+      margin-bottom: 35px;
+      padding: 20px 0;
+      &-question{
+      }
+      &-answer{
+        display: none;
+      }
+    }
+  }

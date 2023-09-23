@@ -1,0 +1,40 @@
+.catalog{
+  padding: 100px 0;
+  &__title{
+
+    font-size: 35px;
+    line-height: 96.5%;
+    color: #0F0F10;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  &__row{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+
+    &-block{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+    }
+    &-input{
+      width: 200px;
+      height: 30px;
+      border-radius: 10px;
+      padding-left: 10px;
+    }
+  }
+}

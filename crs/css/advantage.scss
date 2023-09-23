@@ -1,0 +1,37 @@
+.advantage{
+  padding: 96px 0;
+  background: #EEEEEE;
+  box-shadow: 0 9px 49px rgba(142, 136, 136, 0.16);
+  &__title{
+    font-size: 35px;
+    line-height: 96.5%;
+    color: #0F0F10;
+  }
+  &__content{
+    display: flex;
+    column-gap: 35px;
+    flex-wrap: wrap;
+    &-title{
+      font-size: 18px;
+      line-height: 111%;
+      color: #0F0F10;
+
+      justify-content: center;
+      align-items: center;
+    }
+    &-subtitle{
+      font-size: 15px;
+      line-height: 18px;
+      color: #0F0F10;
+      justify-content: center;
+      align-items: center;
+    }
+    &-card{
+      display: flex;
+      row-gap: 50px;
+      margin-top: 68px;
+      column-gap: 22px;
+
+    }
+  }
+}

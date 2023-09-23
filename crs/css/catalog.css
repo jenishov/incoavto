@@ -1,0 +1,8 @@
+.catalog {
+  padding: 100px 0;
+}
+.catalog__title {
+  font-size: 35px;
+  line-height: 96.5%;
+  color: #0F0F10;
+}

@@ -1,0 +1,44 @@
+.footer{
+  padding: 50px 0;
+  background: #797C7D;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  &__item{
+    color: #FFFFFF;
+    display: flex;
+    margin-top:76px ;
+    cursor: pointer;
+  }
+  &__item:hover{
+    color: #E31E24;
+    transition: 1s;
+  }
+  &__nav{
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo{
+    display: flex;
+    column-gap: 169px;
+    align-items: center;
+  }
+  &__inko{
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+  &__icon{
+    display: flex;
+    column-gap: 28px;
+    align-items: center;
+  }
+
+}
