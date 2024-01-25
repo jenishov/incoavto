@@ -10,9 +10,10 @@ const getAllCars = ()=>{
             cars.forEach((item) => {
                 cataLogRow.innerHTML += `
                <div class="car__content-card">
-               <div class="car__content-imgs"> 
-               <img class="car__content-img" src="${item.image.startsWith("https") ? item.image : "../../" + item.image}" alt="">
+               <div class="car__content-imgs">
+                <img class="car__content-img" src="${item.image.startsWith("https") ? item.image : "../../" + item.image}" alt="">
                </div>
+                   
                     <div class="car__content-about">
                         <h3 class="car__content-title">${item.title}</h3>
                         <ul class="car__content-list">
@@ -98,7 +99,7 @@ const getAllCars = ()=>{
             let deleteBtns = document.querySelectorAll('.delete-btn');
             deleteBtns.forEach((btn)=>{
                 btn.addEventListener('click',()=>{
-                    fetch(`http://localhost:3000/cars/${btn.dataset.id}`,{
+                    fetch(`https://incoavtodb.onrender.com/cars/${btn.dataset.id}`,{
                         method:'delete'
                     }).then(() =>{
                         cataLogRow.innerHTML= '';
@@ -113,7 +114,7 @@ const getAllCars = ()=>{
 getAllCars();
 addForm.addEventListener('submit',(e)=>{
     e.preventDefault();
-    fetch('http://localhost:3000/cars',{
+    fetch('https://incoavtodb.onrender.com/cars',{
         headers: {
             'Accept': 'application/json',
                 'Content-Type': 'application/json'
