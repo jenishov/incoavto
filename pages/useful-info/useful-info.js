@@ -2,13 +2,16 @@ let infoContent =document.querySelector('.useful-info__content');
 
 
 const getAllInfo =(num)=>{
-    fetch('http://localhost:3000/info')
+    fetch('https://incoavtodb.onrender.com/info')
         .then((response)=>response.json())
         .then((info)=>{
             info.filter((item,idx)=> idx > num * 5 - 6 && idx < num *5).forEach((item,idx)=>{
                 infoContent.innerHTML += `
             <div style="flex-direction: ${idx % 2 === 0 ? 'row-reverse' : 'row'}" " class="useful-info__content-card">
-                    <img class="useful-info__content-img" src="${item.image}" alt="">
+            <div class="useful-info__content-imgs">
+            <img class="useful-info__content-img" src="${item.image}" alt="">
+            </div>
+                   
                     <div class="useful-info__content-right">
                         <h3 class="useful-info__content-title">${item.title}</h3>
                            <p class="useful-info__content-subtitle">${item.descr}</p>

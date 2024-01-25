@@ -13,8 +13,13 @@
     &-card{
       width: calc(33.33333% - 13.33333px);
     }
+    &-imgs{
+      max-width: 360px;
+      height: 240px;
+  }
     &-img{
       width: 100%;
+
     }
     &-about{
       padding: 35px;
@@ -24,6 +29,7 @@
       line-height: 96.5%;
       color: #0F0F10;
       margin-bottom: 30px;
+      white-space: nowrap;
     }
     &-list {
       display: flex;

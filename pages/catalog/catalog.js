@@ -4,13 +4,15 @@ let addBtn = document.querySelector('.add-btn');
 let overlay = document.querySelector('.overlay');
 
 const getAllCars = ()=>{
-    fetch('http://localhost:3000/cars')
+    fetch('https://incoavtodb.onrender.com/cars')
         .then( (response) => response.json() )
         .then( (cars) => {
             cars.forEach((item) => {
                 cataLogRow.innerHTML += `
                <div class="car__content-card">
-                    <img class="car__content-img" src="${item.image.startsWith("https") ? item.image : "../../" + item.image}" alt="">
+               <div class="car__content-imgs"> 
+               <img class="car__content-img" src="${item.image.startsWith("https") ? item.image : "../../" + item.image}" alt="">
+               </div>
                     <div class="car__content-about">
                         <h3 class="car__content-title">${item.title}</h3>
                         <ul class="car__content-list">
